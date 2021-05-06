@@ -23,7 +23,8 @@
             <h4 v-if="alertActive">
                 attenzione inserire un testo più lungo!!
             </h4>
-            <input type="text" v-model="strTodo" placeholder="Nuovo Todo">
+            <input type="text" v-model="strTodo" @keyup.enter="addTodo" placeholder="Nuovo Todo">
+
             <button @click="addTodo">aggiungi</button>
         </div>
 
