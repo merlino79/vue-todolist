@@ -20,10 +20,10 @@
             <img src="asset/img/logo.png" alt="">
         </div>
         <div class="new-todo">
-            <h4>
+            <h4 v-if="alertActive">
                 attenzione inserire un testo più lungo!!
             </h4>
-            <input type="text">
+            <input type="text" placeholder="Nuovo Todo">
             <button>aggiungi</button>
         </div>
 
@@ -33,14 +33,18 @@
                     todo
                     <i class="fas fa-times"></i>
                 </li>
-                <li>
+                <li class="checked">
                     todo
                     <i class="fas fa-times"></i>
                 </li>
                 <li>
+                    todo
+                    <i class="fas fa-times"></i>
 
                 </li>
-                <li>
+                <li class="last">
+                    todo
+                    <i class="fas fa-times"></i>
 
                 </li>
             </ul>
