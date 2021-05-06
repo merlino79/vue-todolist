@@ -29,24 +29,12 @@
 
         <div class="todoList">
             <ul>
-                <li>
-                    todo
-                    <i class="fas fa-times"></i>
-                </li>
-                <li class="checked">
-                    todo
-                    <i class="fas fa-times"></i>
-                </li>
-                <li>
-                    todo
-                    <i class="fas fa-times"></i>
+                <li v-for="todo in todos">
+                    {{todo.todo}}
 
-                </li>
-                <li class="last">
-                    todo
                     <i class="fas fa-times"></i>
-
                 </li>
+
             </ul>
 
         </div>
