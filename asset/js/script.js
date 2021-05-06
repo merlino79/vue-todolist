@@ -42,6 +42,12 @@ const app = new Vue({
                 this.todos.push({ todo: this.strTodo, checked: false });
                 this.strTodo = '';
 
+
+            } else {
+                this.alertActive = true;
+                setTimeout(() => {
+                    this.alertActive = false;
+                }, 2000);
             }
 
 
