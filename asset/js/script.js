@@ -38,8 +38,13 @@ const app = new Vue({
             this.todos.splice(index, 1) //elimino elemento array 
         },
         addTodo() {
-            this.todos.push({ todo: this.strTodo, checked: false });
-            this.strTodo = '';
+            if (this.strTodo.length > 2) {
+                this.todos.push({ todo: this.strTodo, checked: false });
+                this.strTodo = '';
+
+            }
+
+
 
 
 
