@@ -8,11 +8,11 @@ const app = new Vue({
             },
             {
                 todo: 'divertirmi con vue Js',
-                checked: true
+                checked: false
             },
             {
                 todo: 'studiare il codice e adattarlo',
-                checked: false
+                checked: true //riga 32 hml
             },
             {
                 todo: 'disegnare a matita e finirlo in digitale',

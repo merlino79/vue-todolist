@@ -29,8 +29,9 @@
 
         <div class="todoList">
             <ul>
-                <li v-for="todo in todos">
-                    {{todo.todo}}
+                <li v-for="(todo, index) in todos" :class="(todo.checked) ? 'checked' : 'null' " :style="">
+
+                    {{todo.todo}} {{index}}
 
                     <i class="fas fa-times"></i>
                 </li>
