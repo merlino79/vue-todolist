@@ -31,6 +31,10 @@ const app = new Vue({
     },
     methods: {
 
+        removeTodo() {
+            console.log('ciao');
+        }
+
 
     }
 });
