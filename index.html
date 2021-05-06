@@ -29,9 +29,9 @@
 
         <div class="todoList">
             <ul>
-                <li v-for="(todo, index) in todos" :class="(todo.checked) ? 'checked' : 'null' " :style="">
+                <li v-for="(todo, index) in todos" :class="(todo.checked) ? 'checked' : 'null' " :style="(index ===todos.length -1 ) ? 'border:none' : null " @click="todo.checked = !todo.checked">
 
-                    {{todo.todo}} {{index}}
+                    {{todo.todo}}
 
                     <i class="fas fa-times"></i>
                 </li>
