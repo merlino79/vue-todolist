@@ -8,20 +8,31 @@ body {
     background-color: #bd8216;
 }
 
-input {
-    display: block;
-    margin: 10px;
+.container {
+    width: 60%;
+    height: 100px;
+    margin: 0 auto;
 }
 
-input:focus {
-    outline: 0;
-    ;
+.images {
+    text-align: center;
 }
 
-.red {
-    color: red;
+.images img {
+    width: 300px;
+    padding: 10px;
 }
 
-.green {
-    color: green;
+.input {
+    text-align: center;
+    cursor: pointer;
+}
+
+.todoList ul {
+    list-style: none;
+}
+
+.todoList ul li {
+    display: flex;
+    justify-content: space-around;
 }
