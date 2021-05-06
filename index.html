@@ -23,7 +23,7 @@
             <h4 v-if="alertActive">
                 attenzione inserire un testo più lungo!!
             </h4>
-            <input type="text" placeholder="Nuovo Todo">
+            <input type="text" v-model="strTodo" placeholder="Nuovo Todo">
             <button>aggiungi</button>
         </div>
 
@@ -33,7 +33,7 @@
 
                     {{todo.todo}}
 
-                    <i @click="removeTodo" class="fas fa-times"></i>
+                    <i @click.stop="removeTodo(index)" class="fas fa-times"></i>
                 </li>
 
             </ul>

@@ -1,7 +1,9 @@
 const app = new Vue({
     el: '#app',
     data: {
+
         alertActive: false,
+        strTodo: " ciao arsenè",
         todos: [{
                 todo: 'sudiare',
                 checked: false
@@ -31,9 +33,14 @@ const app = new Vue({
     },
     methods: {
 
-        removeTodo() {
-            console.log('ciao');
-        }
+        removeTodo(index) {
+            //console.log(index);
+            this.todos.splice(index, 1) //elimino elemento array 
+        },
+        addTodo() {
+
+
+        },
 
 
     }
